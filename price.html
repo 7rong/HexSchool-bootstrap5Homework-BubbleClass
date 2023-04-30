@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Class</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Noto Sans', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body >
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+             <a class="navbar-brand" href="#">
+                <i class="bi bi-record-circle-fill fs-6 pe-2 text-primary"></i>
+                <h1 class="d-inline-block fs-4 mb-0">夢想泡泡</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-2 my-2">
+                        <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+                    </li>
+                    
+                    <li class="nav-item mx-2 my-2">
+                        <a class="nav-link" href="qa.html">常見問題</a>
+                    </li>
+                    <li class="nav-item mx-2 my-2">
+                        <a class="btn btn-primary" href="#sign-up">我要報名</a>
+                    </li>
+                </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- 版頭 -->
+    <header class="py-5 text-center" style="background-image: url(./img/bg_paper.png); height: 180px;">
+        <p class="text-uppercase text-info mb-0">HAPPY LIFE</p>
+        <h2 class="text-secondary">開始實踐夢想</h2>
+    </header>
+
+    <!-- 主要內容 -->
+    <section class="py-5 container" id="sign-up">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-12">
+                <form action="#" class="p-lg-5 shadow-lg">
+                    <h3 class="deco-line ps-3 mb-3">選擇方案</h3>
+                    <div class="row row-cols-1 row-cols-lg-3 gy-3 mb-2x">
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-primary btn-lg w-100 py-3 fw-bold">
+                                精緻小班教學 <br class="d-none d-lg-block btn-special">
+                                NT$1500/堂
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-primary btn-lg w-100 py-3 fw-bold btn-special">
+                                歡樂團體課 <br class="d-none d-lg-block btn-special">
+                                NT$1000/堂
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-primary btn-lg w-100 py-3 fw-bold h-100 btn-special active">
+                                客製化課程
+                                
+                            </button>
+                        </div>
+                    </div>
+
+                    <h3 class="deco-line ps-3 mb-3">填寫資料</h3>
+                    <div class="row mb-3 row-cols-1 row-cols-lg-2 gy-3">
+                        <div class="col">
+                            <label for="given-name" class="form-label">名字</label>
+                            <input type="text" class="form-control" id="given-name" aria-label="Given name">
+                        </div>
+                        <div class="col">
+                            <label for="first-name" class="form-label">姓氏</label>
+                            <input type="text" class="form-control" id="first-name" aria-label="First name">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tel" class="form-label">手機號碼</label>
+                        <input type="tel" class="form-control" id="tel" placeholder="0987654321">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">電子郵件</label>
+                        <input type="email" class="form-control" id="email" placeholder="xxx@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="city" class="form-label">居住城市</label>
+                        <input type="text" class="form-control" id="city">
+                    </div>
+                    <div class="mb-3">
+                        <label for="contact-time" class="form-label">方便聯繫時間</label>
+                        <select class="form-select" aria-label="select contact time" id="contact-time">
+                            <option value="9-12" selected>9:00-12:00</option>
+                            <option value="12-15">12:00-15:00</option>
+                            <option value="15-18">15:00-18:00</option>
+                            <option value="18-21">18:00-21:00</option>
+                          </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="add" class="form-label">加購服務</label>
+                        <div class="row row-cols-1 row-cols-lg-auto">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">水中攝影及精修圖三張</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">GoPro課程錄影紀錄</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">課程道具帶回家</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="others" class="form-label">備註說明</label>
+                        <textarea name="others" id="others" style="resize:none; height: 86px;" class="w-100 form-control"></textarea>
+                    </div>
+                    <div class="mb-3 mt-2x">
+                        <button type="submit" class="btn btn-primary w-100">選擇方案</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 其他協助 -->
+    <section class="bg-light">
+        <div class="container py-5">
+            <h3 class="text-center text-secondary mb-3">需要其他協助嗎</h3>
+            <div class="row justify-content-center g-4 g-md-3">
+                <div class="col-8 col-md-4 col-lg-3">
+                    <div class="card border-0 shadow-md-sm shadow">
+                        <div class="card-body p-0 text-center">
+                            <a href="tel:+886-0987654321" class="text-decoration-none d-block stretch-link p-3 link-secondary">
+                                <i class="bi bi-telephone-fill pe-1 text-info"></i>0987-654-321</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-4 col-lg-3">
+                    <div class="card border-0 shadow-md-sm shadow">
+                        <div class="card-body p-0 text-center">
+                            <a href="#" class="text-decoration-none d-block stretch-link p-3 link-secondary">
+                                <i class="bi bi-instagram pe-1 text-info"></i>泡泡工作坊</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-4 col-lg-3">
+                    <div class="card border-0 shadow-md-sm shadow">
+                        <div class="card-body p-0 text-center">
+                            <a href="qa.html" class="text-decoration-none d-block stretch-link p-3 link-secondary">
+                                <i class="bi bi-question-lg pe-1 text-info"></i>常見問題</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="py-3 text-center text-white" style="background: var(--bs-gray);">
+        <small class="mb-0">Copyright © 2021 泡泡工作坊.All rights reserved.</small>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+</body>
+</html>
